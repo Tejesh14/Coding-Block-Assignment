@@ -1,0 +1,19 @@
+.container{
+    font-size: 10px;
+    position: relative;
+    top: 40px;
+}
+.letter{
+    background-color: blueviolet;
+    font-size: 2rem;
+    position: sticky;
+    top: 10px;
+    margin-bottom: 10px;
+}
+.phn-no{
+    font-size: 1rem;
+    border: 1px solid black;
+}
+.phn-no ul li::after{
+    content: "\1F4DE";
+}
