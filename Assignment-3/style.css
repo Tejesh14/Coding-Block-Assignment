@@ -1,0 +1,20 @@
+*{
+    background-color: black;
+}
+
+button{
+    color: lightsalmon;
+    border: 1.5px solid lightsalmon;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #21ebff;
+    border: 1.5px solid #21ebff;
+    transform: translateY(-3px);
+    box-shadow: 0px 1.5px 2px #69f1ff;
+}
