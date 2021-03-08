@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Navigation Bar Code */
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    height: 50px;
+    width: 100%;
+    background-color: #1d3557;
+}
+
+nav div{
+    height: 50px;
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div img{
+    height: 50px;
+}
+
+nav div ul{
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav div a{
+    font-size: 1.4rem;
+    color: #f1faee;
+    /* color: black; */
+}
+
+nav div a:hover{
+    color: #a8dadc;
+}
+
+@media screen and (max-width: 1030px){
+    nav{
+        height: 200px;
+    }
+    
+    nav div{
+        height: 200px;
+        flex-direction: column;
+    }
+
+    nav div ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#contact-btn{
+    /* background-color: #f1faee; */
+    padding: 3px 8px 3px 8px;
+    color: #f1faee;
+    font-weight: bold;
+}
+
+#contact-btn:hover{
+    background-color: #a8dadc;
+    color: #1d3557;
+}
+
+/* Slider Code */
+
+#slider-div-container{
+    height: 500px;
+    background-color: #f1faee;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 10px; */
+}
+
+#slider-div{
+    height: 450px;
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat url(./images/1.jpg);
+    background-position: center;
+    background-size: 75%;
+    cursor: pointer;
+    /* transition: 2s ease-in-out; */
+    animation-name: slider;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+@keyframes slider{
+    0%{
+        background-image: url(./images/1.jpg);
+    }
+    25%{
+        background-image: url(./images/tokyo.jpg);
+    }
+    50%{
+        background-image: url(./images/lovely.jpg);
+    }
+    75%{
+        background-image: url(./images/3.jpg);
+    }
+    100%{
+        background-image: url(./images/4.jpg);
+    }
+}
+
+@media screen and (max-width: 500px){
+    #slider-div-container{
+        height: 400px;
+    }
+
+    #slider-div{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #slider-div{
+        height: 320px;
+    }
+    #slider-div-container{
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #slider-div{
+        height: 280px;
+    }
+    #slider-div-container{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 376px){
+    #slider-div{
+        height: 230px;
+    }
+    #slider-div-container{
+        height: 250px;
+    }
+}
+
+/* Cards Code */
+
+#cards-outer-container{
+    background-color: #a8dadc;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#cards-inner-container{
+    /* background-color: lightpink; */
+    height: 350px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+
+.cards{
+    margin: 10px;
+    height: 320px;
+    width: 250px;
+    background-color: #f1faee;
+}
+
+.cards:hover{
+    border: 2px solid #1d3557;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1080px){
+    #cards-inner-container{
+        flex-wrap: wrap;
+        height: 750px;
+    }
+    #cards-outer-container{
+        height: 770px;
+    }
+    #footer-container{
+        flex-wrap: wrap;
+        height: 500px;
+    }
+    footer{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    #cards-inner-container{
+        flex-wrap: wrap;
+        height: 1450px;
+    }
+    #cards-outer-container{
+        height: 1500px;
+    }
+}
+
+figure:hover{
+    background-size: 125%;
+    cursor: zoom-in;
+}
+
+figcaption h2:hover{
+    color: #1d3557;
+    cursor: pointer;
+}
+
+.img-props{
+    height: 150px;
+    width: 240px;
+    margin: 5px;
+    background-position: center;
+    background-size: 100%;
+    transition: 900ms ease-out;
+}
+
+#img1{
+    background-image: url(./images/1.jpg);
+}
+
+#img2{
+    background-image: url(./images/tokyo.jpg);
+}
+
+#img3{
+    background-image: url(./images/3.jpg);
+}
+
+#img4{
+    background-image: url(./images/Kyoto.jpg);
+}
+
+figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #f1faee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-container{
+    width: 1200px;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: lightsalmon; */
+}
+
+.footer-details{
+    margin: 10px;
+    height: 200px;
+    width: 350px;
+    background-color: #1d3557;
+}
+
+.footer-details h2{
+    text-align: center;
+    color: #a8dadc;
+    margin-top: 25px;
+}
+
+.footer-details p{
+    margin-top: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #f1faee;
+}
+
+.footer-details p a{
+    color: #f1faee;
+}
+
+.footer-details img{
+    margin: 40px 0px 0px 40px;
+    
+}
+
+#github{
+    height: 30px;
+}
+
+#fb{
+    height: 32px;
+}
+
+#ig{
+    height: 28px;
+}
+
+#linkedin{
+    height: 28px;
+}
+
+@media screen and (max-width: 670px){
+    #footer-container{
+        flex-direction: column;
+        height: 700px;
+    }
+    footer{
+        height: 700px;
+    }
+}
