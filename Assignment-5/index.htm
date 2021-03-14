@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.htm">Tejesh Bharadwaj</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.htm">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-box">About Me</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#headingOne">Realme Store</a></li>
+                  <li><a class="dropdown-item" href="#headingTwo">Marvel Avengers Website</a></li>
+                  <li><a class="dropdown-item" href="#headingThree">COVID-19 Website</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#headingFour">Portfolio</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skillss" tabindex="-1" aria-disabled="true">Skills</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- About Me Section -->
+
+      <div class="container" id="about-box">
+          <h1 class="h1 mt-5">About Me</h1>
+          <img src="images/me.jpg" class="img-thumbnail rounded mx-auto d-block" alt="Me">
+          <div class="container">
+            <h1 class="text-center ms-5 display-1">Hello,</h1>
+            <p class="text-start display-6  ms-5 mt-2 ">
+                I'm Tejesh Bharadwaj.  
+            </p>
+            <p class="text-start display-6 ms-5">
+                I am pursuing B.Tech CS with specialization in Cloud Technology and Information Security form Poornima University, Jaipur.
+            </p>
+            <p class="text-start display-6 ms-5">
+                I love Web Development and , I also love to code and solve problems.  
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Projects -->
+
+        <div class="container mt-5">
+            <div class="accordion" id="accordionExample">
+                <h1 class="h1 mb-5">Projects</h1>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Realme Store
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Technology: C Language</strong> In this project I created a platform where a Seller can manage the data of their customes and store into files.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Marvel Avengers Website
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Technology: HTML5, CSS3, Web Scrapping</strong> In this project I created a platform where marvel fans can download and read summaries at a single platform.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        COVID-19 Website
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Technology: HTML5, CSS3, JavaScript, AJAX, and etc.</strong> In this project we created a platform where a Japurites can contact Govt. by providing true information to them, this website also contains live cases in the Country.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Portfolio
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>Technology: HTML5, CSS3, Bootstrap</strong> In this project I created a portfolio which contains my details and my hard work.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+
+        <!-- Skills -->
+
+        <div class="container" id="skillss">
+            <h1 class="h1 mt-5 mb-4">Skills</h1>
+            <h4>HTML5</h4>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 97%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h4>CSS3</h4>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 97%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h4>JavaScript</h4>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h4>Bootstrap 4</h4>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h4>Jquery</h4>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="container mt-5">
+            <footer class="bg-dark text-center text-white">
+                <!-- Grid container -->
+                <div class="container p-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-facebook"></i>
+                    </a>
+            
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-twitter"></i
+                    ></a>
+            
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-google"></i
+                    ></a>
+            
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+            
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-linkedin-in"></i
+                    ></a>
+            
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-github"></i
+                    ></a>
+                </section>
+                <!-- Section: Social media -->
+            
+                <!-- Section: Text -->
+                <section class="mb-4">
+                    <p>
+                    Thank You for visiting my Portfolio.
+                    </p>
+                </section>
+                <!-- Section: Text -->
+            
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">About Me</h5>
+            
+                        <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#about-box" class="text-white">Click Here</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+            
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Projects</h5>
+            
+                        <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#headingOne" class="text-white">Realme Store</a>
+                        </li>
+                        <li>
+                            <a href="#headingTwo" class="text-white">Marvel Avengers Website</a>
+                        </li>
+                        <li>
+                            <a href="#headingThree" class="text-white">COVID-19 Website</a>
+                        </li>
+                        <li>
+                            <a href="#headingFour" class="text-white">Portfolio</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+                </div>
+                <!-- Grid container -->
+            
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2021 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">portfoliobyme.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+        </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/acebee38c7.js" crossorigin="anonymous"></script>
+</body>
+</html>
