@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: no-repeat url(../images/wallpapersden.com_k-natural-gradient_3840x2160.jpg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    width: 300px;
+    margin: 30px auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.616);
+}
+
+input{
+    display: block;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 15px 0px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 2px 0px 1.2px #f78270;
+    margin: 20px auto;
+}
+
+input:focus{
+    color: #f78270;
+}
+
+#cityDetails{
+    text-align: center;
+    margin: 30px 0px 5px 0px;
+    font-size: 1.9rem;
+}
+
+#dayDetails{
+    text-align: center;
+    margin: 5px 0px 5px 0px;
+    font-size: 1rem;
+}
+
+#temp{
+    font-size: 4.5rem;
+    text-align: center;
+    text-shadow: -1px 3px 0px rgba(0, 0, 0, 0.616);
+}
+
+#description{
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+#min-max{
+    text-align: center;
+    margin-top: 2px;
+    font-size: 1.3rem;
+}
