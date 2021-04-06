@@ -28,7 +28,7 @@ $('input[type="text"]').keypress(function(e){
             const countryName =data.sys.country;
             const description =  data.weather[0].description;
             const day = new Date().getDay();
-            const date = new Date().getUTCDate()+1;
+            const date = new Date().getDate();
             const month = new Date().getMonth();
             const year = new Date().getUTCFullYear();
 
