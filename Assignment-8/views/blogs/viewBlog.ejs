@@ -1,0 +1,23 @@
+<%- include('../header') %> 
+<%- include('../navbar') %> 
+    <div class="back-navbar">
+       <a href="/blogs" class="btn btn-primary">Back</a>
+    </div>  
+    <h1><%= blogData.author %>'s Blog</h1>
+
+    <div class="center-div-container">
+        <div class="container">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Title:</strong> <%= blogData.title %></h5>
+                </div>
+                <img src="<%= blogData.img %>" class="card-img-bottom" alt="..."><br>
+                <!-- <h5 class="card-title"><strong>Author:</strong> <%= blogData.author %></h5> -->
+                <p class="card-text"><%= blogData.content %></p>
+                <form action="/blogs/<%= blogData._id %>?_method=DELETE " method="POST" id="del-form">
+                  <a href="/blogs/<%= blogData.id %>/edit " class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                  <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+              </form> 
+        </div>
+    </div>
+<%- include('../footer') %> 
+
